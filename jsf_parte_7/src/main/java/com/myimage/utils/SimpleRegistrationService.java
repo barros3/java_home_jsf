@@ -35,7 +35,7 @@ public class SimpleRegistrationService {
 			public void prepare(MimeMessage mimeMessage) throws Exception {
 				MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
 				message.setTo(profile.getEmail());
-				message.setSubject("Confirmação de cadastro");
+				message.setSubject("ConfirmaÃ§Ã£o de cadastro");
 				message.setFrom("MyImage.com");
 				Map<Object, Object> model = new HashMap<Object, Object>();
 				model.put("profile", profile);

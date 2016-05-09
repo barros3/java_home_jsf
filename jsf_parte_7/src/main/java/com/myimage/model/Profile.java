@@ -20,8 +20,8 @@ public class Profile {
 	private String sexy;
 	private Date birth;
 
-	@OneToOne(cascade = CascadeType.ALL)
 	@MapsId
+	@OneToOne(cascade = CascadeType.ALL)
 	private User user;
 
 	public Long getId() {

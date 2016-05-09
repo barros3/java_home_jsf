@@ -20,7 +20,7 @@ public class ConfirmPasswordValidator implements Validator {
         String confirm = (String) value;
  
         if (!password.equals(confirm)) {
-            throw new ValidatorException(new FacesMessage("Senhas n„o s„o iguais."));
+            throw new ValidatorException(new FacesMessage("Senhas n√£o s√£o iguais."));
         }
     }
 }

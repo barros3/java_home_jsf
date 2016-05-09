@@ -3,7 +3,7 @@ package com.myimage.dao;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
- 
+
 import com.myimage.model.User;
  
 public class UserImpl implements UserDao {
@@ -14,7 +14,7 @@ public class UserImpl implements UserDao {
         this.session = session;
     }
   
-    @Override
+//    @Override
     public boolean existsValidation(String validation) {
         Criteria criteria = session.createCriteria(User.class);
         criteria.add(Restrictions.eq("validation", validation));        

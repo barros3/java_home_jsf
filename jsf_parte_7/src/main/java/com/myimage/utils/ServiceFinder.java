@@ -15,8 +15,7 @@ public class ServiceFinder {
         ExternalContext external = context.getExternalContext();
  
         ServletContext servletContext = (ServletContext) external.getContext();
-        ApplicationContext appContext = WebApplicationContextUtils
-                .getWebApplicationContext(servletContext);
+        ApplicationContext appContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
  
         Object object = appContext.getBean(beanName);
         return object;

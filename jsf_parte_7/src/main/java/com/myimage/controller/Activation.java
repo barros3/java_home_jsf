@@ -4,7 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
- 
+
 import com.myimage.business.UserBusiness;
  
 @ManagedBean(name="activation")
@@ -16,7 +16,7 @@ public class Activation {
  
     private boolean valid = false;
  
-    @PostConstruct
+	@PostConstruct
     public void init() {
         UserBusiness userBusiness = new UserBusiness();
         if(userBusiness.existsValidation(getKey())){
